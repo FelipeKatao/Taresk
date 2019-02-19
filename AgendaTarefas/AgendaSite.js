@@ -43,6 +43,6 @@ document.querySelector("#NovaTarefa").addEventListener('click', function (e) {
     }
     else
     {
-        alert("Limite de Tarefas estourdo, exclua tarefas antigas");
+        alert("Limite de Tarefas na pagina, exclua tarefas antigas para poder adicionar novas.");
     }
 });
