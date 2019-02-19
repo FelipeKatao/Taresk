@@ -1,0 +1,70 @@
+#Topo {
+    height: 90px;
+    width: 100%;
+    margin-top: -20px;
+    position: relative;
+    background-color: #9400D3;
+}
+#Topo  ul li {
+    text-decoration: none;
+    text-align: left;
+    font-style:normal;
+    float: left;
+    padding: 30px;
+    list-style-type: none;
+    display: block;
+}
+#Topo a{ color:white; text-decoration:none;  }
+#Logo{
+    color:white;
+    font-family:Arial;
+    position:absolute;
+    margin-top:30px;
+    margin-left:20px;
+}
+#Navtopo {
+    position: absolute;
+    margin-top: 10px;
+    color: white;
+    font-family: Arial;
+}
+#Escopo {
+    height: 400px;
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #9932CC;
+    border-radius: 10px;
+}
+#Escopo ul li{text-decoration:none; font-style:normal;list-style-type:none;font-family:Arial;color:white}
+.ListaTarefas_class_Medium {
+    width: 200px;
+    float: left;
+    background-color: #BA55D3;
+    border-radius: 10px;
+    width:100%;
+    height:auto;
+    margin-top:14px;
+}
+.ListaTarefas_class_Medium_Sobre {
+    width: 400px;
+    float: left;
+    background-color: #BA55D3;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+.Lista_Tarefas {
+    font-family: Arial;
+    font-size: 20px;
+    margin-top: 4px;
+}
+.Lista_Tarefas_sobre {
+    margin-top: 10px;
+    font-family: Arial;
+    margin-top: 4px;
+}
+.Lista_color_Ordich {
+    background-color: #9932CC;
+}
