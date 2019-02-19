@@ -68,3 +68,28 @@
 .Lista_color_Ordich {
     background-color: #9932CC;
 }
+
+#DialogoNovaTarefa {
+    background-color: #800080;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99;
+    margin-left: 490px;
+    margin-top: -370px;
+    height: auto;
+    width: 200px;
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    text-align:center;
+}
+.DialogoPadding{
+    margin-top:10px;
+    padding-bottom:10px;
+}
+.visibility_on{
+    visibility:visible;
+}
+.visibility_off{
+    visibility:hidden;
+}
