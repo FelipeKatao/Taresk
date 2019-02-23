@@ -102,8 +102,18 @@ document.querySelector("#prioridade").addEventListener('click', function (e) {
 
 });
 
+document.querySelector("#closseBt").addEventListener('click', function (e) {
+    e.preventDefault();
+    alert("Culpa do bootstarp!");
+    const element = document.querySelector("#DialogoNovaTarefa");
+    element.classList.add("visibility_off");
+    element.classList.remove("visibility_on");
+
+});
+
 function main()
 {
   CriarElemento("stephaniedelgado/webservice_go Create main.go","#1 opened 11 days ago by FelipeKatao");
 }
 main();
+

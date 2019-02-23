@@ -4,42 +4,57 @@
     <meta charset="utf-8">
     <title>Taresk</title>
     <link href="Style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="Topo">
-        <h3 id="Logo">Taresk</h3>
-        <nav id="Navtopo">
-            <ul>
-                <li><a id="NovaTarefa" href="#">Criar Nova Tarefa</a></li>
-                <li><a id="ClearTarefas" href="#">Remover Tarefa</a></li>
-                <li><a id="prioridade" href="#">Priorizar tarefa</a></li>
-                <li><a href="#">Sair</a></li>
-            </ul>
-        </nav>
-    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #9400D3;">
+        <a class="navbar-brand" href="#">Taresk</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#" id="NovaTarefa" style="color:white;">Criar nova Tarefa <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#" id="ClearTarefas" style="color:white;">Excluir Tarefa</a>
+                <a class="nav-item nav-link" href="#" id="prioridade" style="color:white;">Definir prioridade</a>
+                <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+            </div>
+        </div>
+    </nav>
+
     <div id="Escopo">
 
- <!--       <div class="ListaTarefas_class_Medium" id="Task01">
-            <ul id="Task01_corpo">
-                <li class="Lista_Tarefas">stephaniedelgado/webservice_go Create main.go</li>
-                <li class="Lista_Tarefas_sobre">#1 opened 11 days ago by FelipeKatao </li>
-            </ul>
-        </div>
--->
+        <!--       <div class="ListaTarefas_class_Medium" id="Task01">
+                    <ul id="Task01_corpo">
+                        <li class="Lista_Tarefas">stephaniedelgado/webservice_go Create main.go</li>
+                        <li class="Lista_Tarefas_sobre">#1 opened 11 days ago by FelipeKatao </li>
+                    </ul>
+                </div>
+        -->
     </div>
+
     <div id="DialogoNovaTarefa" class="visibility_off">
+        <div id="closseBt"><a href="#">X</a></div>
         <h2>Criar Nova tarefa</h2>
         <form class="DialogoPadding">
             <label id="TituloTarefa">Titulo da Tarefa</label>
             <input type="text" id="TituloInput" class="DialogoPadding" />
-            <label id="Descrtarefa class="DialogoPadding"">Descricao da Tarefa</label>
+            <label id="Descrtarefa class=" DialogoPadding"">Descricao da Tarefa</label>
             <textarea id="DescrArea" class="DialogoPadding"></textarea>
-            <input onclick="'#'"  type="button" id="EnviarBtNova"  value="Criar tarefa"/>
+            <input onclick="'#'" type="button" id="EnviarBtNova" value="Criar tarefa" />
         </form>
     </div>
 
-    <script src="AgendaSite.js"></script>
+    <script src="AgendaSite.js">
+        main();
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -69,6 +69,21 @@
     background-color: #9932CC;
 }
 
+#closseBt{
+    background-color:lightgray;
+    border-radius:15px;
+    height:24px;
+    width:24px;
+    margin-top:6px;
+    margin-left:170px;
+}
+#closseBt a {
+        text-decoration: none;
+        text-align: left;
+        font-style: normal;
+        color:white;
+}
+
 #DialogoNovaTarefa {
     background-color: #800080;
     border-radius: 10px;
@@ -81,7 +96,7 @@
     font-family: Arial;
     font-size: 15px;
     color: white;
-    text-align:center;
+    text-align: center;
 }
 .DialogoPadding{
     margin-top:10px;
