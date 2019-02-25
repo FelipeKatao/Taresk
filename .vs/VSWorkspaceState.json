@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AgendaTarefas"
+    "\\AgendaTarefas",
+    "\\AgendaTarefas\\css"
   ],
-  "SelectedNode": "\\AgendaTarefas\\index.html",
+  "SelectedNode": "\\AgendaTarefas\\css\\bootstrap-theme.min.css",
   "PreviewInSolutionExplorer": false
 }
