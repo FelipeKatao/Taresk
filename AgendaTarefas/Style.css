@@ -29,11 +29,8 @@
     font-family: Arial;
 }
 #Escopo {
-    height: 400px;
-    width: 900px;
     margin: auto;
-    margin-top: 10px;
-    background-color: #9932CC;
+    margin-top: 30px;
     border-radius: 10px;
 }
 #Escopo ul li{text-decoration:none; font-style:normal;list-style-type:none;font-family:Arial;color:white}

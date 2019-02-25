@@ -16,6 +16,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                   Criar Nova Tarefa
+                </button>
                 <a class="nav-item nav-link" href="#" id="NovaTarefa" style="color:white;">Criar nova Tarefa <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#" id="ClearTarefas" style="color:white;">Excluir Tarefa</a>
                 <a class="nav-item nav-link" href="#" id="prioridade" style="color:white;">Definir prioridade</a>
@@ -24,27 +27,67 @@
         </div>
     </nav>
 
-    <div id="Escopo">
+    <div id="Escopo" class="container">
+        <table class="table table-hover table-dark" style="border-radius:10px;">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tarefa</th>
+                    <th scope="col">Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>stephaniedelgado/webservice_go Create main.go</td>
+                    <td>#1 opened 11 days ago by FelipeKatao</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>stephaniedelgado/webservice_go Create main.go</td>
+                    <td>#1 opened 11 days ago by FelipeKatao</td>
+                </tr>
+            </tbody>
+        </table>
 
         <!--       <div class="ListaTarefas_class_Medium" id="Task01">
-                    <ul id="Task01_corpo">
-                        <li class="Lista_Tarefas">stephaniedelgado/webservice_go Create main.go</li>
-                        <li class="Lista_Tarefas_sobre">#1 opened 11 days ago by FelipeKatao </li>
-                    </ul>
-                </div>
-        -->
+                <ul id="Task01_corpo">
+                    <li class="Lista_Tarefas">stephaniedelgado/webservice_go Create main.go</li>
+                    <li class="Lista_Tarefas_sobre">#1 opened 11 days ago by FelipeKatao </li>
+                </ul>
+            </div>
+    -->
     </div>
 
-    <div id="DialogoNovaTarefa" class="visibility_off">
-        <div id="closseBt"><a href="#">X</a></div>
-        <h2>Criar Nova tarefa</h2>
-        <form class="DialogoPadding">
-            <label id="TituloTarefa">Titulo da Tarefa</label>
-            <input type="text" id="TituloInput" class="DialogoPadding" />
-            <label id="Descrtarefa class=" DialogoPadding"">Descricao da Tarefa</label>
-            <textarea id="DescrArea" class="DialogoPadding"></textarea>
-            <input onclick="'#'" type="button" id="EnviarBtNova" value="Criar tarefa" />
-        </form>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Criar nova tarefa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo Tarefa</label>
+                            <input type="text" class="form-control" id="TituloInput" aria-describedby="emailHelp" placeholder="Titulo da tarefa aqui">
+                            <small id="emailHelp" class="form-text text-muted">A sua tarefa tem que ter um titulo!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Descrição</label>
+                            <textarea type="text" class="form-control" id="DescrArea" placeholder="Descrição da tarefa"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button"  id="EnviarBtNova" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="AgendaSite.js">
