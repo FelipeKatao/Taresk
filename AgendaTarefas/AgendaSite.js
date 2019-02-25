@@ -2,7 +2,28 @@
 var Id = 0;
 var IdTask=[];
 
+//Adicionar a Nova tarefa (tabela) no painel
+function CriarElementoTabela(Descricao,TipoDeAnotacao)
+{
+    Id += 1
+    let divElement = document.getElementById('painel');
+    let tr = document.createElement('tr');
+    let td = document.createElement('td');
+    let td2 = document.createElement('td');
+    let th = document.createElement('th');
 
+    tr.id = Id;
+    IdTask.push(tr.id);
+    divElement.appendChild(tr);
+    th.textContent = Id;
+    tr.appendChild(th);
+    td.textContent = Descricao;
+    tr.appendChild(td);
+    td2.textContent = TipoDeAnotacao;
+    tr.appendChild(td2);
+
+
+}
 //Adicionar a nova tarefa a Dash Board//
 function CriarElemento(Descricao, TipoDeAnotacao)
     {
@@ -38,28 +59,14 @@ function CriarElemento(Descricao, TipoDeAnotacao)
         Id += 1;
 
 }
-//Ao clicar adicionar na Dashboard//
-document.querySelector("#NovaTarefa").addEventListener('click', function (e) {
-    e.preventDefault();
-    const element = document.querySelector("#DialogoNovaTarefa")
-    if (Id <= 3)
-    {
-        element.classList.remove("visibility_off")
-        element.classList.add("visibility_on");
-    }
-    else
-    {
-        alert("Limite de Tarefas estourdo, exclua tarefas antigas");
-    }
-});
+
 
 document.querySelector("#EnviarBtNova").addEventListener('click', function (e) {
-    const element = document.querySelector("#DialogoNovaTarefa");
+
     if (document.getElementById('TituloInput').value != 0)
     {
-        CriarElemento("#"+Id+document.getElementById('TituloInput').value, document.getElementById('DescrArea').value);
-        element.classList.add("visibility_off");
-        element.classList.remove("visibility_on");
+        //CriarElemento("#" + Id + document.getElementById('TituloInput').value, document.getElementById('DescrArea').value);
+        CriarElementoTabela(document.getElementById('TituloInput').value, document.getElementById('DescrArea').value);
     }
     else
     {
@@ -71,14 +78,13 @@ document.querySelector("#ClearTarefas").addEventListener('click', function (e) {
     //Limpar as tarefas//
     if(IdTask.length!=0)
     {
-    var parent = document.getElementById("Escopo");
-    var child = document.getElementById(IdTask[length]);
+        var parent = document.getElementById('painel');
+    var child = document.getElementById(IdTask[0]);
     console.log(IdTask);
+    console.log(IdTask[length]);
     parent.removeChild(child);
     IdTask.shift()
-    console.log(IdTask);
-    Id-=1;
-    
+    console.log(IdTask);    
     }
     else
     {
@@ -104,7 +110,8 @@ document.querySelector("#prioridade").addEventListener('click', function (e) {
 
 function main()
 {
-  CriarElemento("stephaniedelgado/webservice_go Create main.go","#1 opened 11 days ago by FelipeKatao");
+   // CriarElemento("stephaniedelgado/webservice_go Create main.go", "#1 opened 11 days ago by FelipeKatao");
+   // CriarElementoTabela("stephaniedelgado/webservice_go Create main.go", "#1 opened 11 days ago by FelipeKatao");
 }
 main();
 

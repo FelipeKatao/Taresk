@@ -17,18 +17,16 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                   Criar Nova Tarefa
+                    Criar Nova Tarefa
                 </button>
-                <a class="nav-item nav-link" href="#" id="NovaTarefa" style="color:white;">Criar nova Tarefa <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#" id="ClearTarefas" style="color:white;">Excluir Tarefa</a>
+                <button type="button" class="btn btn-danger" id="ClearTarefas" style="margin-left:10px">Excluir Tarefa</button>
                 <a class="nav-item nav-link" href="#" id="prioridade" style="color:white;">Definir prioridade</a>
-                <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
             </div>
         </div>
     </nav>
 
     <div id="Escopo" class="container">
-        <table class="table table-hover table-dark" style="border-radius:10px;">
+        <table id="painel" class="table table-hover table-dark" style="border-radius:10px;">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -36,27 +34,11 @@
                     <th scope="col">Descrição</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>stephaniedelgado/webservice_go Create main.go</td>
-                    <td>#1 opened 11 days ago by FelipeKatao</td>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <td>stephaniedelgado/webservice_go Create main.go</td>
-                    <td>#1 opened 11 days ago by FelipeKatao</td>
-                </tr>
+            <tbody id="Bodyt">
+
             </tbody>
         </table>
 
-        <!--       <div class="ListaTarefas_class_Medium" id="Task01">
-                <ul id="Task01_corpo">
-                    <li class="Lista_Tarefas">stephaniedelgado/webservice_go Create main.go</li>
-                    <li class="Lista_Tarefas_sobre">#1 opened 11 days ago by FelipeKatao </li>
-                </ul>
-            </div>
-    -->
     </div>
 
 
@@ -84,7 +66,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button"  id="EnviarBtNova" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                    <button type="button"  id="EnviarBtNova" class="btn btn-primary" data-dismiss="modal">Criar tarefa</button>
                 </div>
             </div>
         </div>
