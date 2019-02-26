@@ -1,5 +1,6 @@
 //Legacy
 var Id = 0;
+var idChange = 0;
 var IdTask=[];
 
 //Adicionar a Nova tarefa (tabela) no painel
@@ -59,6 +60,22 @@ function CriarElemento(Descricao, TipoDeAnotacao)
         Id += 1;
 
 }
+//Adcionar Badge de uma tarefa
+function adicionarbadge(Elemento)
+{
+
+
+    var newDiv = document.createElement('div');
+    var position = document.getElementById(Elemento);
+    var newText = document.createTextNode("Alerta!");
+
+    newDiv.appendChild(newText);
+    newDiv.classList.add("badge");
+    newDiv.classList.add("badge-danger");
+    position.appendChild(newDiv);
+
+    console.log("Alert Badge");
+}
 
 
 document.querySelector("#EnviarBtNova").addEventListener('click', function (e) {
@@ -78,7 +95,7 @@ document.querySelector("#ClearTarefas").addEventListener('click', function (e) {
     //Limpar as tarefas//
     if(IdTask.length!=0)
     {
-        var parent = document.getElementById('painel');
+    var parent = document.getElementById('painel');
     var child = document.getElementById(IdTask[0]);
     console.log(IdTask);
     console.log(IdTask[length]);
@@ -93,13 +110,15 @@ document.querySelector("#ClearTarefas").addEventListener('click', function (e) {
 
 });
 
+
 document.querySelector("#prioridade").addEventListener('click', function (e) {
-    //Limpar as tarefas//
+   
+
     if(IdTask.length!=0)
     {
-    let child = document.getElementById(IdTask[length]);
-    child.classList.remove("ListaTarefas_class_Medium");
-    child.classList.add("ListaTarefas_class_Red");
+        console.log(idChange);
+        adicionarbadge(IdTask[idChange]);
+        idChange += 1;
     }
     else
     {
@@ -107,6 +126,11 @@ document.querySelector("#prioridade").addEventListener('click', function (e) {
     }
 
 });
+
+function MasterClass()
+{
+    //Função extra//
+}
 
 function main()
 {

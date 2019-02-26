@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Taresk</title>
     <link href="Style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #9400D3;">
         <a class="navbar-brand" href="#">Taresk</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,12 +21,19 @@
                     Criar Nova Tarefa
                 </button>
                 <button type="button" class="btn btn-danger" id="ClearTarefas" style="margin-left:10px">Excluir Tarefa</button>
-                <a class="nav-item nav-link" href="#" id="prioridade" style="color:white;">Definir prioridade</a>
+                <button type="button" class="btn btn-warning" id="prioridade" style="margin-left:10px">Definir Prioridade</button>
+
             </div>
         </div>
     </nav>
 
     <div id="Escopo" class="container">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Seja bem vindo!</strong> Seu painel de tarefas ainda não possui nenhuma tarefa, incie os trabalhos criando sua primeira tarefa.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <table id="painel" class="table table-hover table-dark" style="border-radius:10px;">
             <thead>
                 <tr>
@@ -34,9 +42,7 @@
                     <th scope="col">Descrição</th>
                 </tr>
             </thead>
-            <tbody id="Bodyt">
-
-            </tbody>
+            <tbody id="Bodyt"></tbody>
         </table>
 
     </div>
@@ -66,7 +72,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button"  id="EnviarBtNova" class="btn btn-primary" data-dismiss="modal">Criar tarefa</button>
+                    <button type="button" id="EnviarBtNova" class="btn btn-primary" data-dismiss="modal">Criar tarefa</button>
                 </div>
             </div>
         </div>
