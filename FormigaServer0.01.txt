@@ -3,12 +3,15 @@ Formiga Server program console
 
 Como programar a parte de console utilizando este editor console aplication:
 #Hastags = comentarios.
-Variavel: = Chama a variavel criada onde o programa acessa ou modifica
-Set>Variavel: = Cria uma variavel com o valor Undefield ou zerado.
-if>Variavel>Valor: = Verifica atraves de uma if se o valor é verdadeiro ou falso
+Variavel: = Chama a variavel criada onde o programa acessa ou modifica.
+Set>Variavel = Cria uma variavel com o valor Undefield ou zerado.
+if>Variavel=Valor: = Verifica atraves de uma if se o valor é verdadeiro ou falso.
+if>Variavel>Valor  , if>Variavel<Valor: , e executa se for verdadeiro.
+(Variavel):valor = Definie o valor da variavel criada.
 
-
-
+Construir uma linguagem funcional que utiliza notação basica de variveis e acesso direto do Taresk.
+O console da Formiga deve funcionar para que sirva de comunicação direta com o software como:
+"Criar um codigo que acesse e retorne x tarefa na dash do usuario x"
 
 
 #Users for Js Modifications in Taresk
