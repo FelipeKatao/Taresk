@@ -1,6 +1,15 @@
 Sistema de banco de dados / Server Taresk 
 Formiga Server program console
 
+Como programar a parte de console utilizando este editor console aplication:
+#Hastags = comentarios.
+Variavel: = Chama a variavel criada onde o programa acessa ou modifica
+Set>Variavel: = Cria uma variavel com o valor Undefield ou zerado.
+if>Variavel>Valor: = Verifica atraves de uma if se o valor é verdadeiro ou falso
+
+
+
+
 
 #Users for Js Modifications in Taresk
 User: FelipeCatao
