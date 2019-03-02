@@ -3,7 +3,7 @@ var keyX=0;
 class ConfigLicenca {
     //Create licence key for entry Taresk//
     licence(key) {
-        let licenceAvaliables = ["FELIPEKATAO", "X467P1"];
+        let licenceAvaliables = ["FELIPEKATAO", "DELGADO"];
         if (licenceAvaliables.indexOf(key) > -1) {
             window.location.replace("AgendaTarefas/index.html");
         } else {
