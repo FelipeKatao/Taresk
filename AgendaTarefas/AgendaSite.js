@@ -119,16 +119,3 @@ function clearForm() {
     document.querySelector('#TituloInput').value = '';
     document.querySelector('#DescrArea').value = '';
 }
-
-function MasterClass() {
-    //Função extra//
-
-}
-
-function main() {
-    // CriarElemento("stephaniedelgado/webservice_go Create main.go", "#1 opened 11 days ago by FelipeKatao");
-    // CriarElementoTabela("stephaniedelgado/webservice_go Create main.go", "#1 opened 11 days ago by FelipeKatao");
-
-
-}
-main();
