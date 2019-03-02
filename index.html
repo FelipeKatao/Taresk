@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Taresk 0.0.1</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
 </head>
 
 <body style="background-color:#9400D3;">
     <div id="Titulo" class="container">
-        <h1>Taresk</h1> <br />
-        Se organize,descubra novos caminhos!
+        <p class="teste">Taresk</p>
+        Se organize, descubra novos caminhos!
     </div>
     <div id="Corpo" class="container-fluid" style="margin-top:50px">
         <form>
             <div class="form-group">
-                <label for="staticEmail" class="container" style="color:white;font-size:20px;">Numero da sua licença</label>
-                <input class="form-control form-control-lg" id="campotxt" type="text" placeholder="Insira a sua licença aqui.">
+                <label for="staticEmail" class="container" style="color:white;font-size:20px;">Chave do produto:</label>
+                <input class="form-control form-control-lg" id="campotxt" type="password" placeholder="Insira os caracteres de cÃ³digo de licenÃ§a">
                 <button type="button" id="entrarBt" class="btn  btn-lg btn-block" style="background-color:#EE82EE;color:white;margin-top:4px">Entrar</button>
             </div>
         </form>
-        <button type="button" class="btn  btn-lg btn-block" style="background-color:#BA55D3;color:white">Criar minha licença para o Taresk 0.0.1v</button>
+        <button type="button" class="btn  btn-lg btn-block" style="background-color:#BA55D3;color:white">Criar minha
+            licenÃ§a para o Taresk 0.0.1v</button>
     </div>
 
-    <div id="Corpo" class="container-fluid" style="margin-bottom:20px;color:white;text-align:center;font-size:15px">
-        Felipe Catão tecnologias 2019, todos os direitos reservados.
+    <!-- <div id="Corpo" class="container-fluid" style="margin-bottom:20px;color:white;text-align:center;font-size:15px">
+        Felipe Catï¿½o tecnologias 2019, todos os direitos reservados.
+    </div> -->
+
+    <footer class="page-footer font-small blue pt-4">
+        <div class="footer-copyright text-center py-3">Â© 2018 Copyright:
+            <af>Felipe CatÃ£o</a>
         </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="script/indexlicence.js">
@@ -34,12 +43,15 @@
     <script>
         chave = new ConfigLicenca();
         document.querySelector("#entrarBt").addEventListener('click', function (e) {
-         chave.licence(document.getElementById("campotxt").value);
+            chave.licence(document.getElementById("campotxt").value);
         });
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

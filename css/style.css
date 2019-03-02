@@ -1,17 +1,24 @@
 /*Estilo do titulo*/
 
-#Titulo{
-    margin:auto;
-    margin-top:50px;
-    text-align:center;
-    color:white;
+#Titulo {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
 }
-    #Titulo h1 {
-        font-size: 70px;
-    }
+
+.teste {
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 /*Corpo*/
 
-#Corpo{
-    margin-top:20px;
+#Corpo {
+    margin-top: 20px;
 }
+
+/* input.form-control+.btn-block {
+
+} */
