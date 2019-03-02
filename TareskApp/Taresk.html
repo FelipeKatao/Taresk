@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #9400D3;">
         <a class="navbar-brand" href="#">Taresk</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -24,8 +24,10 @@
                     Criar Nova Tarefa
                 </button>
                 <button type="button" class="btn btn-danger" id="ClearTarefas" style="margin-left:10px">Excluir Tarefa</button>
-                <button type="button" class="btn btn-warning" id="prioridade" style="margin-left:10px">Definir
-                    Prioridade</button>
+                <button type="button" class="btn btn-warning" id="prioridade" style="margin-left:10px">
+                    Definir
+                    Prioridade
+                </button>
 
             </div>
         </div>
@@ -54,7 +56,7 @@
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -68,7 +70,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Titulo Tarefa</label>
                             <input type="text" class="form-control" id="TituloInput" aria-describedby="emailHelp"
-                                placeholder="Titulo da tarefa aqui">
+                                   placeholder="Titulo da tarefa aqui">
                             <small id="emailHelp" class="form-text text-muted">A sua tarefa tem que ter um titulo!</small>
                         </div>
                         <div class="form-group">
@@ -85,17 +87,23 @@
         </div>
     </div>
 
-    <script src="js/AgendaSite.js">
-        main();
+    <!--<script src="js/AgendaSite.js"></script>-->
+    <script src="App/app.js"></script>
+    <script src="App/TaskControler.js"></script>
+    <script src="App/TaskView.js"></script>
+    <script>
+        let contx = new TaskControler();
+        contx.TaskSet(0, "ddd", "3233");
+        console.log(contx.GetName());
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

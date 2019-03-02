@@ -71,7 +71,6 @@ function adicionarbadge(Elemento) {
     newDiv.classList.add("badge-danger");
     position.appendChild(newDiv);
 
-    console.log("Alert Badge");
 }
 
 
@@ -86,7 +85,7 @@ document.querySelector("#EnviarBtNova").addEventListener('click', function () {
 });
 
 document.querySelector("#ClearTarefas").addEventListener('click', function (e) {
-    //Limpar as tarefas//
+
     if (IdTask.length != 0) {
         var parent = document.getElementById('painel');
         var child = document.getElementById(IdTask[0]);
