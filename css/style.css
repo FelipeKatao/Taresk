@@ -1,0 +1,17 @@
+/*Estilo do titulo*/
+
+#Titulo{
+    margin:auto;
+    margin-top:50px;
+    text-align:center;
+    color:white;
+}
+    #Titulo h1 {
+        font-size: 70px;
+    }
+
+/*Corpo*/
+
+#Corpo{
+    margin-top:20px;
+}
