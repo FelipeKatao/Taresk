@@ -5,7 +5,7 @@ class ConfigLicenca {
     licence(key) {
         let licenceAvaliables = ["FELIPEKATAO", "DELGADO"];
         if (licenceAvaliables.indexOf(key) > -1) {
-            window.location.replace("AgendaTarefas/index.html");
+            window.location.replace("TareskApp/Taresk.html");
         } else {
             alert("Sua chave de licença não é valida, confira se esta digitada corretamente. Ou procure o suporte tecnico");
         }
