@@ -14,6 +14,7 @@ document.querySelector("#EnviarBtNova").addEventListener('click', function () {
         View.AddNewtask(cont.GetId(), cont.GetName(), cont.GetAbout());
         View.clearForm();
         Id += 1;
+        $("#alert-ft").alert("close");
     }
     else
     {
