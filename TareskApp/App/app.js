@@ -2,7 +2,7 @@
 var Id = 0;
 
 document.querySelector("#EnviarBtNova").addEventListener('click', function () {
-    
+
     if (document.getElementById('TituloInput').value != 0)
     {
         cont.TaskSet(Id, document.getElementById('TituloInput').value, document.getElementById('DescrArea').value);
@@ -26,6 +26,7 @@ document.querySelector("#ExcluitBtModal").addEventListener('click', function (e)
         try {
             View.excludeTask(idvExclude);
             cont.RemoveId(idvExclude);
+            View.AddNewAlert("Tarefa: "+cont.GetName()+" Excluida com sucesso.","alert-danger");
         } catch (error) {
             alert("Id notificada não existe no contexto. Verifique se não a espaços ou se é uma numeração correta.")
             console.log("Id notificada não existe no contexto, verifique se a Id corresponde a Task que deseja selecionar");
@@ -40,6 +41,7 @@ document.querySelector("#DefenirPrioridade").addEventListener('click', function 
     {
         try {
             taskv.AddNewBadge(idv);
+            View.AddNewAlert("Tarefa: "+cont.GetName()+" definida como prioridade.","alert-warning");
         } catch (error) {
             alert("Id notificada não existe no contexto. Verifique se não a espaços ou se é uma numeração correta.")
             console.log("Id notificada não existe no contexto, verifique se a Id corresponde a Task que deseja selecionar");
