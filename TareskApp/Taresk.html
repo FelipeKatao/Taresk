@@ -23,11 +23,11 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Criar Nova Tarefa
                 </button>
-                <button type="button" class="btn btn-danger" id="ClearTarefas" style="margin-left:10px">Excluir Tarefa</button>
-                <button type="button" class="btn btn-warning" id="prioridade" style="margin-left:10px">
+                <button type="button" class="btn btn-warning" id="prioridade" style="margin-left:10px" data-toggle="modal" data-target="#Prioridade">
                     Definir
                     Prioridade
                 </button>
+                <button type="button" class="btn btn-danger" id="ClearTarefas" style="margin-left:10px" data-toggle="modal" data-target="#ExcluirMod">Excluir Tarefa</button>
 
             </div>
         </div>
@@ -44,7 +44,7 @@
         <table id="painel" class="table table-hover table-dark" style="border-radius:10px;">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
                     <th scope="col">Tarefa</th>
                     <th scope="col">Descrição</th>
                 </tr>
@@ -87,13 +87,68 @@
         </div>
     </div>
 
+    <div class="modal fade" id="Prioridade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+   <div class="modal-dialog" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Definir prioridade</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="modal-body" id="modal-body-status">
+                <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Insira a Id da tarefa que deseja:</label>
+                            <input type="text" class="form-control" id="Idvalue" aria-describedby="emailHelp"
+                                   placeholder="Exemplo: 1">
+                        </div>
+                    </form>
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+               <button type="button" id="DefenirPrioridade" class="btn btn-primary" data-dismiss="modal">Criar</button>
+           </div>
+       </div>
+   </div>
+</div>
+<div class="modal fade" id="ExcluirMod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+   <div class="modal-content">
+       <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Excluir Tarefa</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+           </button>
+       </div>
+       <div class="modal-body" id="modal-body-status">
+            <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Insira a Id da tarefa que deseja excluir:</label>
+                        <input type="text" class="form-control" id="IdvalueExclude" aria-describedby="emailHelp"
+                               placeholder="Exemplo: 1">
+                    </div>
+                </form>
+       </div>
+       <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+           <button type="button" id="ExcluitBtModal" class="btn btn-primary" data-dismiss="modal">Excluir</button>
+       </div>
+   </div>
+</div>
+</div>
+
     <!--<script src="js/AgendaSite.js"></script>-->
     <script src="App/app.js"></script>
     <script src="App/TaskControler.js"></script>
     <script src="App/TaskView.js"></script>
     <script>
-        //Para testes futuros//
-    </script>
+            var View = new TaskView();
+            var cont = new TaskControler();
+        </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

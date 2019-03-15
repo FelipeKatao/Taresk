@@ -35,5 +35,9 @@ class TaskView {
         document.querySelector('#TituloInput').value = '';
         document.querySelector('#DescrArea').value = '';
     }
-
+    excludeTask(IdEl){
+        let parent = document.getElementById('painel');
+        let child = document.getElementById(IdEl);
+        parent.removeChild(child);
+    }
 }
