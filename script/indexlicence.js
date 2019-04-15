@@ -3,11 +3,14 @@ var keyX=0;
 class ConfigLicenca {
     //Create licence key for entry Taresk//
     licence(key) {
+        //Its line for test//
+        window.location.replace("TareskApp/Taresk.html");
+        //End test
         let licenceAvaliables = ["KATAO", "DELGADO"];
         if (licenceAvaliables.indexOf(key) > -1) {
             window.location.replace("TareskApp/Taresk.html");
         } else {
-            alert("Sua chave de licenÁa n„o È valida, confira se esta digitada corretamente. Ou procure o suporte tecnico");
+            alert("Sua chave de licen√ßa n√£o √© valida, confira se esta digitada corretamente. Ou procure o suporte tecnico");
         }
     }
     readlicence() {
