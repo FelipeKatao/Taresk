@@ -12,6 +12,7 @@ Nesta versão é possível fazer:
  - [ ] Editar a tarefa
  - [ ] Fazer login em um usuário genérico 
  - [ ] Salvar as tarefas no banco de dados
+ - [ ] Api para exportar dados 
  
  Todas essas funções devem estar disponíveis nesta versão,caso tenha funções a mais que o Taresk faça que não esteja nessa lista consulte o item  Bônus desta versão[^1]
 
