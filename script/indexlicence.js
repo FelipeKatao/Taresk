@@ -6,7 +6,7 @@ class ConfigLicenca {
         //Its line for test//
         window.location.replace("TareskApp/Taresk.html");
         //End test
-        let licenceAvaliables = ["KATAO", "DELGADO"];
+        let licenceAvaliables = ["KATAO", "DELGADO","RECRUTADOR"];
         if (licenceAvaliables.indexOf(key) > -1) {
             window.location.replace("TareskApp/Taresk.html");
         } else {
