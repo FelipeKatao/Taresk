@@ -17,7 +17,8 @@ Nesta versão é possível fazer:
  Todas essas funções devem estar disponíveis nesta versão,caso tenha funções a mais que o Taresk faça que não esteja nessa lista consulte o item  Bônus desta versão[^1]
 
 # Interface Taresk
-
+gfg 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTEwMTMwMSwxMzcxNTc5MTExXX0=
+eyJoaXN0b3J5IjpbLTE0Nzk1Mzk4NzAsLTgzMTEwMTMwMSwxMz
+cxNTc5MTExXX0=
 -->
